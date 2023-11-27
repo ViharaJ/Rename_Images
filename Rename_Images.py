@@ -1,9 +1,18 @@
 """
 Rename images to match excel file. A dictionary is created using the excel file
+
 Input images: <ID>_<N>, where N is either 1 or 2
+
+
 Dictionary Structure
 Key: Names in the Einbett-ID column (string)
 Value: new names, stored in newName column (string)
+
+How to use: 
+    1. Changes imageFolder to image folder path
+    2. Change excelPath to where excel file is located
+    3. Add more file types to acceptedFileTypes if necessary
+    3. Run
 """
 import pandas as pd
 import os 
